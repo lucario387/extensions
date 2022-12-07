@@ -83,7 +83,7 @@ M.file = function(mode, filepath, content)
 end
 
 M.list_themes = function()
-  local default_themes = vim.fn.readdir(vim.fn.stdpath "data" .. "/site/pack/packer/start/base46/lua/base46/themes")
+  local default_themes = vim.fn.readdir(vim.fn.stdpath "data" .. "/site/pack/packer/opt/base46/lua/base46/themes")
 
   local dirState = vim.loop.fs_stat(fn.stdpath "config" .. "/lua/custom/themes")
 
