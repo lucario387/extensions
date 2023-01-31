@@ -16,8 +16,7 @@
 ---@field tabufline? NvTabufLineConfig options for NvChad custom tabline
 ---@field nvdash? NvDashConfig Options for NvChad custom dashboard menu
 ---@field cheatsheet? NvCheatSheetConfig Options for NvChad cheatsheet menu
-
----@alias HLTable table<string, Base46HLGroups>
+---@field changed_themes {[string]: Base46Table}
 
 ---@class NvCmpConfig
 ---@field icons boolean Whether to add colors to icons in nvim-cmp popup menu
