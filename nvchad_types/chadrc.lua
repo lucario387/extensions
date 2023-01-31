@@ -16,7 +16,7 @@
 ---@field tabufline? NvTabufLineConfig options for NvChad custom tabline
 ---@field nvdash? NvDashConfig Options for NvChad custom dashboard menu
 ---@field cheatsheet? NvCheatSheetConfig Options for NvChad cheatsheet menu
----@field changed_themes {[string]: Base46Table}
+---@field changed_themes {[ThemeName]: Base46Table} For users who want to override default colors used in a colorscheme. Check out [Theme directory](https://github.com/NvChad/base46/tree/master/lua/base46/themes) for the list of theme name that will be registered by NvChad
 
 ---@class NvCmpConfig
 ---@field icons boolean Whether to add colors to icons in nvim-cmp popup menu
