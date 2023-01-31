@@ -24,3 +24,7 @@ This repository contains the core utilities for [NvChad](https://github.com/NvCh
 - nvchad - Contains the very *heart* and core of NvChad  
 - chad_reload - Contains the utilities for reloading NvChad
 - telescope - This direcotory contains the extension to toggle custom themes of NvChad. 
+
+# Credits
+
+- Huge thanks to [@lucario387](https://github.com/lucario387) for creating `nvchad_types` , that dir was moved from example_config repo.
