@@ -148,7 +148,7 @@ M.get_example_chadrc = function()
   local data = utils.file("r", chadrc_path)
 
   if not data then
-    print "Error: Could not read exmaple chadrc!"
+    print "Error: Could not read example chadrc!"
     return false
   end
 
