@@ -12,7 +12,7 @@
 ---@field lazy? boolean If true, the plugin will only be loaded when necessary
 ---@field enabled? boolean|fun():boolean Specify if the plugin should be included in the spec
 ---@field cond? boolean|fun():boolean Specify condition for whether the plugin should be loaded (Useful for specifying plugins for VsCode/FireNvim) 
----@field dependencies string|LazyDependencyConfig[] List of plugin names or plugin specs that should be loaded when the plugin loads. If you only specify the name, make sure the plugin config is specified somewhere else
+---@field dependencies? string|LazyDependencyConfig[] List of plugin names or plugin specs that should be loaded when the plugin loads. If you only specify the name, make sure the plugin config is specified somewhere else
 ---@field opts? table|fun(opts: table):table Should be a table/returns a table of configuration option for a plugin. If this is set, `config` argument will be considered as `true`
 ---@field config? function|true If true, assume and execute `require(plugin_name).setup(opts)`, with opts that can be modified using the `opts` argument of the plugin config. If a function, then this will be executed appropriately
 ---@field init? fun(self: PluginConfig) The function to be run during startup. This will run regardless of the plugin being loaded or not
@@ -43,7 +43,7 @@
 ---Check `:h vim.keymap.set()` for more information
 ---@class LazyKeymaps
 ---@field [1] string lhs of the mapping
----@field [2]? string|fun() rhs. Can be a vimscript string or a Lua function
+---@field [2]? string|fun()|false rhs. Can be a vimscript string or a Lua function
 ---@field desc? string
 ---@field mode? VimKeymapMode|VimKeymapMode[]
 ---@field noremap? boolean
