@@ -87,7 +87,7 @@ local function update()
     end
   end
 
-  local packer_sync = misc.packer_sync()
+  local sync_plugins = misc.sync_plugins()
 
   -- function that will executed when git commands are done
   local function update_exit(_, code)
@@ -111,8 +111,8 @@ local function update()
       -- print the update summary
       vim.cmd "bd!"
       echo(summary)
-      if packer_sync then
-        vim.cmd [[PackerSync]]
+      if sync_plugins then
+        vim.cmd [[Lazy update]]
       end
     else
       git.restore_repo_state()

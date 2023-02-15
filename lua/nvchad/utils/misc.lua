@@ -46,10 +46,10 @@ M.print_padding = function(symbol, repeat_count, return_string)
   end
 end
 
--- prompt the user to execute PackerSync
-M.packer_sync = function()
-  echo(prompts.packer_sync)
-  local ans = string.lower(vim.fn.input "-> ") == "y"
+-- prompt the user to sync plugins
+M.sync_plugins = function()
+  echo(prompts.sync_plugins)
+  local ans = string.lower(vim.fn.input "-> ") == ""
   return ans
 end
 

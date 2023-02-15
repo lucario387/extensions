@@ -128,15 +128,6 @@ M.no_snapshots_found = {
 M.no_snapshots_selected = { { "No snapshots selected!" } }
 M.not_a_git_dir =
   { { "Error: ", "ErrorMsg" }, { "<CONFIG_PATH>", "ErrorMsg" }, { " is not a valid git directory.\n", "ErrorMsg" } }
-M.packer_sync = {
-  { "Would you like to run ", "WarningMsg" },
-  { "PackerSync" },
-  { " after the update has completed?\n", "WarningMsg" },
-  { "Not running ", "WarningMsg" },
-  { "PackerSync" },
-  { " may break NvChad! ", "WarningMsg" },
-  { "[y/N]", "WarningMsg" },
-}
 M.remote_head_changes_fetch_failed = { { "Error: Could not fetch remote changes.", "ErrorMsg" } }
 M.remote_head_fetching_changes = { { "Fetching new changes from remote...", "String" } }
 M.remote_head_sha_fetch_failed = { { "Error: Could not fetch remote HEAD sha.", "ErrorMsg" } }
@@ -181,6 +172,9 @@ M.stash_failed = { { "Error: Could not complete stash operation.", "ErrorMsg" } 
 M.stashing_custom_dir =
   { { "Stashing custom directory under: ", "WarningMsg" }, { "<STASH_NAME>" }, { ".", "WarningMsg" } }
 M.switched_to_update_branch = { { "Switched to update branch ", "Title" }, { "<UPDATE_BRANCH>" }, { ".", "Title" } }
+M.sync_plugins = {
+  { "Would you like to sync plugins? [Y/n]", "WarningMsg" },
+}
 M.update_cancelled = { { "Update cancelled!", "Title" } }
 M.update_cancelled_up_to_date = {
   { "You are already up to date with ", "String" },
